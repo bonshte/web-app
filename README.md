@@ -1,2 +1,2 @@
-# web-app
-AIS Course Project 📚
+# Web App
+Offensive Information Security Homework :books:
