@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Log in</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -11,7 +11,7 @@
     <main>
         <div class="auth-form">
             <div class="auth-form-header">
-                <h1>Welcome</h1>
+                <h1>Sign up</h1>
             </div>
             <div class="auth-form-callout auth-form-error">
                 <p id="error-message"></p>
@@ -19,20 +19,24 @@
             <div class="auth-form-body">
                 <form>
                     <div>
+                        <label for="email">Email</label>
+                        <input class="form-item" type="email" name="email">
+                    </div>
+                    <div>
                         <label for="username">Username</label>
-                        <input class="form-item" type="text">
+                        <input class="form-item" type="text" name="username">
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input class="form-item" type="password">
+                        <input class="form-item" type="password" name="password">
                     </div>
                     <div>
-                        <button class="form-item" type="submit">Log in</button>
+                        <button class="form-item" type="submit">Sign up</button>
                     </div>
                 </form>
             </div>
             <div class="auth-form-callout">
-                <p>New here? <a href="./signup.html">Create an account</a></p>
+                <p>Already have an account? <a href="./index.html">Sign in</a></p>
             </div>
         </div>
     </main>
