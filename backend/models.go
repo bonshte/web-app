@@ -21,7 +21,7 @@ func AllNotes() ([]Note, error) {
 	for rows.Next() {
 		var note Note
 
-		err := rows.Scan(&note.UserId, &note.Title, &note.Description, &note.Date, &note.Priority)
+		err := rows.Scan(&note.UserId, &note.Title, &note.Description, &note.Date, &note.PriorityId)
 		if err != nil {
 			return nil, err
 		}

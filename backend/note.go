@@ -5,5 +5,5 @@ type Note struct {
 	Title       string
 	Description string
 	Date        string
-	Priority    Priority
+	PriorityId  int
 }
