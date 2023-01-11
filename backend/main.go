@@ -31,6 +31,6 @@ func notesIndex(w http.ResponseWriter, r *http.Request) {
 	}
 
 	for _, note := range notes {
-		fmt.Fprintf(w, "%d, %s, %s, %s, %s\n", note.Id, note.Title, note.Description, note.Date, note.Priority)
+		fmt.Fprintf(w, "%d, %s, %s, %s, %d\n", note.UserId, note.Title, note.Description, note.Date, note.PriorityId)
 	}
 }
