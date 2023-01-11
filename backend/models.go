@@ -10,7 +10,7 @@ var DB *sql.DB
 // AllBooks returns a slice of all books in the books table.
 func AllNotes() ([]Note, error) {
 	// Note that we are calling Query() on the global variable.
-	rows, err := DB.Query("SELECT * FROM user")
+	rows, err := DB.Query("SELECT * FROM note")
 	if err != nil {
 		return nil, err
 	}
